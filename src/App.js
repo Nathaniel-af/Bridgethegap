@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Nav from "./components/nav";
+import Home from "./pages";
+import { Routes, Route } from "react-router-dom";
+import About from "./pages/about";
+import Findsupport from "./pages/findsupport";
+import Getinvolved from "./pages/getinv";
+import Dropdown from "./components/Dropdown";
+import React, { useState, useEffect } from "react";
 
 function App() {
+  const [isClick, setClick] = useState(false);
+  let toggle = () => {
+    setClick(!isClick);
+  };
+
+  useEffect(() => {
+    const hideMenu = () => {
+      if (window.innerWidth > 768 && isClick) {
+        setClick(false);
+      }
+    };
+    window.addEventListener("resize", hideMenu);
+    return () => {
+      window.removeEventListener("resize", hideMenu);
+    };
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav toggle={toggle} />
+      <Dropdown isClick={isClick} toggle={toggle} />
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/findsuport" element={<Findsupport />} />
+        <Route path="/getinvolved" element={<Getinvolved />} />
+      </Routes>
+    </>
   );
 }
 
