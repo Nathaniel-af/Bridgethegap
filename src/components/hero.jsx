@@ -153,12 +153,32 @@ export default function Hero() {
       </div>
       <div>
         <p>OUR PARTNERS</p>
-        <div className="flex flex-row flex-wrap h-20 md:h-28 my-10 justify-center">
-          <img className="md:mx-10 h-20 " src={AFRICA2030} alt="afica2030" />
-          <img className="md:mx-10 h-20 " src={AHMC} alt="ahmc" />
-          <img className="md:mx-10 h-20 " src={bfo} alt="bfo" />
-          <img className="md:mx-10 h-20 " src={dear} alt="dear" />
-          <img className="md:mx-10 h-20 " src={MOH} alt="MOH" />
+        <div className="flex flex-row flex-wrap h-50 md:h-28 my-5 md:my-10 justify-center">
+          <img
+            className="mx-10 h-20 md:h-28 "
+            src={AFRICA2030}
+            alt="afica2030"
+          />
+          <img
+            className="mx-5 md:mx-10 mb-5 h-20 md:h-28 "
+            src={AHMC}
+            alt="ahmc"
+          />
+          <img
+            className="mx-5 md:mx-10 mb-5 h-20 md:h-28 "
+            src={bfo}
+            alt="bfo"
+          />
+          <img
+            className="mx-5 md:mx-10 mb-5 h-20 md:h-28 "
+            src={dear}
+            alt="dear"
+          />
+          <img
+            className="mx-5 md:mx-10 mb-5 h-20 md:h-28 "
+            src={MOH}
+            alt="MOH"
+          />
         </div>
       </div>
     </div>
