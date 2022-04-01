@@ -126,20 +126,20 @@ export default function Hero() {
         </SwiperSlide>
       </Swiper>
       <div className="flex flex-wrap justify-around text-gray-500 p-5 mt-5">
-        <div className="border-2 shadow-lg  md:w-1/3 rounded-xl p-10 mt-2 text-center flex flex-col justify-center">
-          <p className="text-blue-700">VISION</p>
+        <div className="border-2 shadow-lg  md:w-1/3 text-sm md:text-base rounded-xl p-10 mt-2 text-center flex flex-col justify-center">
+          <p className="text-blue-700 text-base">VISION</p>
           See women, children, and youths in Ethiopia have access to better
           opportunities.
         </div>
-        <div className="border-2 shadow-lg  md:w-1/3 rounded-xl p-10 mt-2 text-center flex flex-col justify-center">
-          <p className="text-blue-700">MISSION</p>
+        <div className="border-2 shadow-lg text-sm md:text-base md:w-1/3 rounded-xl p-10 mt-2 text-center flex flex-col justify-center">
+          <p className="text-blue-700 text-base">MISSION</p>
           To contribute towards the improvement of public health, and the social
           and economic development of our country; to initiate community based,
           women’s oriented and value adding interventions in the areas of
           health, education, women empowerment & youth development.
         </div>
-        <div className="border-2 shadow-lg  md:w-1/2 rounded-xl p-10 mt-4 text-center flex flex-col justify-center">
-          <p className="text-blue-700">VALUES</p>
+        <div className="border-2 shadow-lg text-sm md:text-base md:w-1/2 rounded-xl p-10 mt-4 text-center flex flex-col justify-center">
+          <p className="text-blue-700 text-base">VALUES</p>
           We work together in harmony regardless of differences in ethnicity,
           culture, language, religion, and political views. We value diversity
           and respect the perspectives of the members of the community we serve,
