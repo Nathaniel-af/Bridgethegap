@@ -12,9 +12,10 @@ import MOH from "../img/MOH.png";
 // Import Swiper style
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 export default function Hero() {
   return (
@@ -105,13 +106,16 @@ export default function Hero() {
         </button>
       </div>
       <Swiper
+        slidesPerView={"auto"}
+        centeredSlides={true}
+        spaceBetween={30}
         pagination={{
-          dynamicBullets: true,
+          clickable: true,
         }}
         modules={[Pagination]}
-        className="h-full mt-5 "
+        className="h-full mt-5 bg-gray-100"
       >
-        <SwiperSlide>
+        <SwiperSlide className="pb-10">
           <img className="mx-auto" src={img1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
@@ -149,12 +153,12 @@ export default function Hero() {
       </div>
       <div>
         <p>OUR PARTNERS</p>
-        <div className="flex flex-nowrap h-20 md:h-28 my-10 ">
-          <img className="md:mx-10 " src={AFRICA2030} alt="afica2030" />
-          <img className="md:mx-10 " src={AHMC} alt="ahmc" />
-          <img className="md:mx-10 " src={bfo} alt="bfo" />
-          <img className="md:mx-10 " src={dear} alt="dear" />
-          <img className="md:mx-10 " src={MOH} alt="MOH" />
+        <div className="flex flex-row flex-wrap h-20 md:h-28 my-10 justify-center">
+          <img className="md:mx-10 h-20 " src={AFRICA2030} alt="afica2030" />
+          <img className="md:mx-10 h-20 " src={AHMC} alt="ahmc" />
+          <img className="md:mx-10 h-20 " src={bfo} alt="bfo" />
+          <img className="md:mx-10 h-20 " src={dear} alt="dear" />
+          <img className="md:mx-10 h-20 " src={MOH} alt="MOH" />
         </div>
       </div>
     </div>
